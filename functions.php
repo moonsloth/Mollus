@@ -21,3 +21,12 @@ function hello_elementor_child_enqueue_scripts() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'hello_elementor_child_enqueue_scripts', 20 );
+function js_before_do_header() {
+    echo '<div class="site-container">';
+}
+add_action( 'elementor/theme/before_do_header', 'js_before_do_header' );
+
+function js_after_do_footer() {
+    echo '</div><!-- .site-container -->';
+}
+add_action( 'elementor/theme/after_do_footer', 'js_after_do_footer' );

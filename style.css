@@ -1,4 +1,4 @@
-/* 
+/*
 Theme Name: Hello Elementor Child
 Theme URI: https://github.com/elementor/hello-theme/
 Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
@@ -21,4 +21,10 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 .btn-accent-text{
 	color: #1a2331 !important;
 	font-style: italic !important;
+}
+.site-container {
+	background-color: #fff;
+	border: 2px solid #eee;
+	margin: 0 auto;
+	max-width: 1000px;
 }
